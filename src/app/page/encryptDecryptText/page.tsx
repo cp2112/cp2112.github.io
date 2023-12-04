@@ -63,7 +63,7 @@ function EncryptDecryptText() {
                     <div className='flex items-end w-full	'>
                         <LabelForm type={vis ? "password" : "text"} label={'Ключ'} value={encryptStore.key}
                                    onChange={(event) => encryptStore.setKey(event.target.value)}/>
-                        <button className='btn ml-2 ' onClick={() => setVis(!vis)}>{
+                        <button className='btn ' onClick={() => setVis(!vis)}>{
                             !vis ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         strokeWidth={1.5}
                                         stroke="currentColor" className="w-6 h-6">
@@ -90,7 +90,7 @@ function EncryptDecryptText() {
             </>
 
             <br/>
-            <button onClick={onClick} className="btn btn-neutral">Го!</button>
+            <button onClick={onClick} style={{minWidth:'10rem'}} className="btn btn-neutral">Го!</button>
         </div>
     )
         ;
