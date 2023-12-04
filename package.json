@@ -13,13 +13,13 @@
     "crypto-js": "^4.2.0",
     "mobx": "^6.12.0",
     "mobx-react-lite": "^4.0.5",
-    "next": "14.0.3",
+    "next": "13.4.13",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "20.2.5",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
