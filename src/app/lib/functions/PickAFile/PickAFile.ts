@@ -1,5 +1,5 @@
 export const PickAFile = (getText = true) => {
-    return new Promise<File>((resolve, reject) => {
+    return new Promise<File>((resolve:any, reject) => {
         const input = document.createElement('input');
         input.type = 'file';
         input.onchange = (e: any) => {
@@ -8,7 +8,7 @@ export const PickAFile = (getText = true) => {
             if (!getText) {
                 resolve(file);
             } else {
-                reader.onload = (e) => resolve(e.target.result as string);
+                reader.onload = (e:any) => resolve(e.target.result as string);
                 reader.onerror = (e) => reject(e);
                 reader.readAsText(file);
             }
