@@ -37,9 +37,9 @@ function EncryptDecryptText() {
 
 
     return (
-        <div className='text-right'>
+        <div className='text-right animate'>
             <div role="tablist" className="tabs tabs-boxed mb-8 ">
-                <a onClick={() => setState(true)} role="tab" className={`tab ${state && "tab-active"}`}>
+                <a onClick={() => setState(true)} role="tab" className={`tab ${state && "bg-neutral text-white"}`}>
                     <svg style={{marginRight: '10px'}} xmlns="http://www.w3.org/2000/svg" fill="none"
                          viewBox="0 0 24 24" strokeWidth={1.5}
                          stroke="currentColor" className="w-6 h-6">
@@ -47,7 +47,7 @@ function EncryptDecryptText() {
                               d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
                     </svg>
                     Зашифровать</a>
-                <a onClick={() => setState(false)} role="tab" className={`tab ${!state && "tab-active"}`}>
+                <a onClick={() => setState(false)} role="tab" className={`tab ${!state && "bg-neutral text-white"}`}>
                     <svg style={{marginRight: '10px'}} xmlns="http://www.w3.org/2000/svg" fill="none"
                          viewBox="0 0 24 24" strokeWidth={1.5}
                          stroke="currentColor" className="w-6 h-6">

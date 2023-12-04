@@ -12,7 +12,7 @@ const EncryptDecryptFile: React.FC = () => {
         appStore.setPage(1)
     }, [])
     return (
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center animate'>
             <div>
                 <div className='flex'>
                     <input

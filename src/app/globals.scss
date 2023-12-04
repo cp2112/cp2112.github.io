@@ -10,3 +10,12 @@
 .textarea-disabled, .textarea:disabled, .textarea[disabled] {
   cursor: pointer;
 }
+.animate {
+  opacity: 0;
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
