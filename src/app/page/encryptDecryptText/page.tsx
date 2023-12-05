@@ -36,7 +36,7 @@ function EncryptDecryptText() {
         }
     };
 
-    const onChangeState = (val) => {
+    const onChangeState = (val: boolean) => {
         setState(val)
         encryptStore.setText('')
         encryptStore.setOutput('')
@@ -69,7 +69,7 @@ function EncryptDecryptText() {
 
                 </div>
 
-                <LabelTextarea  label={"Сообщение"} defaultValue={encryptStore.output}
+                <LabelTextarea label={"Сообщение"} defaultValue={encryptStore.output}
                                placeholder={'Сообщение'}/>
             </>
 
