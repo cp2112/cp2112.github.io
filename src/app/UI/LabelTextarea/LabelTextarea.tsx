@@ -2,6 +2,7 @@ import React, {ClassAttributes} from 'react';
 
 interface ILabelTextarea {
     label: string
+    defaultValue:string
 }
 
 const LabelTextarea = ({
@@ -14,7 +15,7 @@ const LabelTextarea = ({
             <div className="label">
                 <span className="label-text">{label}</span>
             </div>
-            <textarea defaultValue={defaultValue} className="textarea textarea-bordered h-24 w-full"
+            <textarea  defaultValue={defaultValue} className="textarea textarea-bordered h-24 w-full"
                       placeholder={placeholder} disabled={true}/>
         </label>
     );
